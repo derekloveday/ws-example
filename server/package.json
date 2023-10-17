@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "build:dev": "webpack --config-name server-dev",
+    "build:prod": "webpack --config-name server-prod",
+    "lint:eslint": "eslint --ext ts,tsx,js,jsx .",
+    "start:dev": "nodemon --config ./nodemon.json",
+    "dev:watch": "concurrently \"npm:watch:*\" -c auto",
+    "watch:build:dev": "npm run build:dev -- --watch",
+    "watch:start:dev": "npm run start:dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.14",
+    "@types/express": "^4.17.19",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
