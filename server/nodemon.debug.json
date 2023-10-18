@@ -1,0 +1,6 @@
+{
+  "watch": ["../dist/**/*.js"],
+  "ext": "ts,tsx,js,jsx,json",
+  "ignore": ["src/**/*.test.ts", "../dist/public/"],
+  "exec": "node --inspect-brk=0.0.0.0:9229 ../dist/server.bundle.js"
+}

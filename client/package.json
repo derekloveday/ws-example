@@ -7,14 +7,18 @@
     "build:dev": "webpack --config-name client-dev",
     "build:prod": "webpack --config-name client-prod",
     "lint:eslint": "eslint --ext ts,tsx,js,jsx .",
-    "dev:watch": "webpack-dev-server --config-name client-dev"
+    "dev:watch": "webpack-dev-server --config-name client-dev",
+    "watch:build:dev": "npm run build:dev -- --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/ws": "^8.5.7",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "uuid": "^9.0.1",
+    "ws": "^8.14.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.28",
